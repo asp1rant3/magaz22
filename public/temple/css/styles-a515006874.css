@@ -1,0 +1,976 @@
+
+
+
+
+
+.tran1 {
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    animation-fill-mode: backwards
+}
+
+.tran2 {
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s
+}
+
+div.form {
+
+    padding: 0 6% 0 6%;
+    width: 88%;
+    border: none
+}
+
+div.form hr.form-header {
+    border: none;
+    outline: 0;
+    display: block;
+    background: url(/Content/images/shadow-bar.png) no-repeat;
+    clear: both;
+    display: inline-block;
+    height: 7px;
+    margin: 10px auto;
+    width: 656px
+}
+
+div.form form {
+    padding-top: 15px
+}
+
+div.form .form-title {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    color: #222;
+    text-transform: uppercase;
+    line-height: 1em
+}
+
+div.form .form-subtitle {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: .975em;
+    font-weight: 700;
+    font-style: normal;
+    color: #222;
+    text-align: center;
+    margin: 0 0 20px 0
+}
+
+div.form .title {
+    margin-bottom: 30px
+}
+
+div.form .error-block,
+div.form .success-block {
+    background-color: #fae7ec;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px
+}
+
+div.form .error-block h5,
+div.form .success-block h5 {
+    color: #222;
+    font-size: 12px
+}
+
+div.form .error-block p,
+div.form .error-block span,
+div.form .error-block ul,
+div.form .success-block p,
+div.form .success-block span,
+div.form .success-block ul {
+    color: #222;
+    font-size: .975em
+}
+
+div.form .error-block ul,
+div.form .success-block ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style-position: inside
+}
+
+div.form .error-block h5 {
+    color: red
+}
+
+div.form .success-block {
+    background-color: #cceedf
+}
+
+div.form fieldset {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+div.form fieldset .checkbox-container {
+    float: left;
+    margin: 4px 0 0
+}
+
+div.form fieldset .checkbox-container .field {
+    margin: 0 0 19px
+}
+
+div.form fieldset .checkbox-container .field:last-child {
+    margin: 0
+}
+
+div.form fieldset div.field {
+    width: 57%;
+    margin: 0 auto 19px;
+    text-align: left;
+    position: relative;
+    float: left;
+    padding: 0 22%
+}
+
+div.form fieldset div.field.before-spacer {
+    margin-bottom: 0
+}
+
+div.form fieldset div.field.full-width {
+    width: 100%;
+    margin: 5px 0
+}
+
+div.form fieldset div.field.field.hr {
+    border-bottom: 1px solid #eee;
+    height: 1px
+}
+
+div.form fieldset div.field div.input-wrapper {
+    position: relative;
+    float: left;
+    width: 100%
+}
+
+div.form fieldset div.field label {
+    width: 100%;
+    margin: 0 3% 11px 0;
+    min-width: 20%;
+    font-family: Tahoma, Geneva, sans-serif;
+    float: left;
+    clear: both;
+    color: #2d2d2d
+}
+
+div.form fieldset div.field label.checkbox,
+div.form fieldset div.field label.radio {
+    width: auto;
+    margin-right: 0;
+    margin-left: 2%;
+    text-align: left;
+    min-width: 0;
+    margin-right: 5%
+}
+
+div.form fieldset div.field label.checkbox {
+    float: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px
+}
+
+div.form fieldset div.field label a {
+    text-decoration: underline;
+    color: #222
+}
+
+div.form fieldset div.field label span.optional {
+    display: none;
+    color: #767676;
+    margin-left: 5px
+}
+
+div.form fieldset div.field input:not([type=checkbox]),
+div.form fieldset div.field select {
+    width: 100%;
+    float: left;
+    height: 45px;
+    outline: 0;
+    border: 1px solid #767676;
+    font-size: .975em
+}
+
+div.form fieldset div.field input:not([type=checkbox]):focus,
+div.form fieldset div.field select:focus {
+    border-color: #2d2d2d
+}
+
+div.form fieldset div.field input.checkbox:not([type=checkbox]),
+div.form fieldset div.field input:not([type=checkbox]).radio,
+div.form fieldset div.field select.checkbox:not([type=checkbox]),
+div.form fieldset div.field select.radio {
+    width: auto;
+    margin-top: 4px
+}
+
+div.form fieldset div.field input:not([type=checkbox]).checkbox,
+div.form fieldset div.field select.checkbox {
+    margin-bottom: 0;
+    float: left;
+    height: auto;
+    border: none
+}
+
+div.form fieldset div.field input:not([type=checkbox]).input-validation-error,
+div.form fieldset div.field select.input-validation-error {
+    border: 2px solid #d01345
+}
+
+div.form fieldset div.field input:not([type=checkbox]).valid~span.tick,
+div.form fieldset div.field select.valid~span.tick {
+    background: url(/Content/images/validation-tick.png) no-repeat;
+    background-size: 17px 16px;
+    display: block;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 13px;
+    right: -25px
+}
+
+div.form fieldset div.field input:not([type=checkbox]).valid~span.field-message,
+div.form fieldset div.field select.valid~span.field-message {
+    display: block
+}
+
+div.form fieldset div.field input:not([type=checkbox])#BirthYear~.tick,
+div.form fieldset div.field select#BirthYear~.tick {
+    right: 115px;
+    top: 45px
+}
+
+div.form fieldset div.field input:not([type=checkbox])#BirthYear~.field-message,
+div.form fieldset div.field select#BirthYear~.field-message {
+    right: 4px;
+    width: 105px;
+    top: 46px
+}
+
+div.form fieldset div.field input:not([type=checkbox]).upperCase,
+div.form fieldset div.field select.upperCase {
+    text-transform: uppercase
+}
+
+div.form fieldset div.field input:not([type=checkbox])::-webkit-input-placeholder,
+div.form fieldset div.field select::-webkit-input-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field input:not([type=checkbox]):-moz-placeholder,
+div.form fieldset div.field select:-moz-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field input:not([type=checkbox])::-moz-placeholder,
+div.form fieldset div.field select::-moz-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field input:not([type=checkbox]):-ms-input-placeholder,
+div.form fieldset div.field select:-ms-input-placeholder {
+    color: #767676
+}
+
+div.form fieldset div.field span.tick {
+    display: none
+}
+
+div.form fieldset div.field select~span.field-message {
+    position: absolute;
+    top: 32px;
+    right: -115px;
+    width: 85px;
+    max-width: 25%;
+    color: #767676;
+    display: none;
+    font-size: 12px;
+    line-height: 14px
+}
+
+div.form fieldset div.field input {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0
+}
+
+div.form fieldset div.field select~span.field-message-format,
+div.form fieldset div.field select~span.field-message-result {
+    display: none
+}
+
+div.form fieldset div.field a {
+    color: #767676;
+    text-decoration: none
+}
+
+div.form fieldset div.field span.field-validation-error {
+    font-family: futura-pt, Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    display: block;
+    background-color: #fae7ec;
+    border: 2px solid #ce1948;
+    padding: 0;
+    z-index: 10;
+    max-width: 500px;
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    bottom: 53px;
+    box-sizing: border-box
+}
+
+div.form fieldset div.field span.field-validation-error span {
+    background-color: #fae7ec;
+    display: block;
+    z-index: 10;
+    padding: 5px 10px
+}
+
+div.form fieldset div.field span.field-validation-error.subfield-validation {
+    bottom: 95px;
+    left: 21.4%;
+    width: 55.4%
+}
+
+div.form fieldset div.field span.field-validation-error::after {
+    position: absolute;
+    left: 10px;
+    bottom: -15px;
+    content: " ";
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #ce1948;
+    height: 0;
+    width: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    z-index: 1
+}
+
+div.form fieldset div.field span.field-validation-error::before {
+    position: absolute;
+    left: 10px;
+    bottom: -12px;
+    content: " ";
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid #fae7ec;
+    height: 0;
+    width: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    z-index: 2
+}
+
+div.form fieldset div.field span.hint {
+    clear: both;
+    padding-top: 6px;
+    color: #767676;
+    display: block;
+    font-size: 12px
+}
+
+div.form fieldset div.field span.hide,
+div.form fieldset div.field span.reveal {
+    float: right;
+    margin-top: -30px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #767676;
+    text-decoration: underline
+}
+
+div.form fieldset div.field span.hide:hover,
+div.form fieldset div.field span.reveal:hover {
+    text-decoration: none
+}
+
+div.form fieldset div.field select.valid~span.tick,
+div.form fieldset div.field span.tick {
+    width: 12px;
+    height: 12px;
+    background: url(/Content/images/checkbox-tick.png) no-repeat;
+    background-size: 12px;
+    vertical-align: baseline
+}
+
+div.form fieldset div.field div.subfield {
+    width: 21%;
+    float: left;
+    margin-right: 4%
+}
+
+div.form fieldset div.field div.subfield.long-subfield {
+    width: 50%
+}
+
+div.form fieldset div.field div.subfield.last-subfield {
+    margin-right: 0
+}
+
+div.form fieldset div.field div.subfield input.valid~span.tick {
+    top: 30px
+}
+
+div.form fieldset div.field div.subfield label.checkbox,
+div.form fieldset div.field div.subfield label.radio {
+    margin-left: 5%
+}
+
+div.form fieldset div.field.nomargin span.field-validation-error {
+    margin-left: 0
+}
+
+div.form fieldset div.field div.tickbox-container {
+    width: 48%;
+    border: 1px solid #767676;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0;
+    min-height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer
+}
+
+div.form fieldset div.field div.tickbox-container label {
+    font-weight: 400;
+    cursor: pointer;
+    float: none;
+    word-wrap: break-word;
+    color: #767676
+}
+
+div.form fieldset div.field div.tickbox-container.selected {
+    border: 2px solid #2d2d2d;
+    padding: 9px 0
+}
+
+div.form fieldset div.field div.tickbox-container.selected label {
+    color: #2d2d2d
+}
+
+div.form fieldset div.field.focused label {
+    color: #2d2d2d
+}
+
+div.form fieldset div.field.focused input,
+div.form fieldset div.field.focused select {
+    border-color: #2d2d2d
+}
+
+div.form fieldset div.field.switch-container {
+    width: 100%;
+    margin: 0 0 -1px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee
+}
+
+div.form fieldset div.field.switch-container label {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+    width: 35%
+}
+
+div.form fieldset div.field.switch-container .switch {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 0 0 5px 0 #222;
+    -moz-box-shadow: inset 0 0 5px 0 #222;
+    box-shadow: inset 0 0 5px 0 #222;
+    background: #d6d6d6;
+    height: 40px;
+    width: 20%;
+    cursor: pointer;
+    position: relative
+}
+
+div.form fieldset div.field.switch-container .switch input {
+    display: none
+}
+
+div.form fieldset div.field.switch-container .switch::after {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #fff;
+    margin: 3px;
+    height: 32px;
+    content: "";
+    display: block;
+    width: 45%;
+    border: 1px solid #767676
+}
+
+div.form fieldset div.field.switch-container .switch::before {
+    content: "";
+    position: absolute;
+    background: url(/Content/images/slider-off.png) no-repeat;
+    background-size: 13px;
+    width: 13px;
+    height: 13px;
+    top: 20px;
+    margin-top: -6px;
+    right: 25%;
+    margin-right: -6px
+}
+
+div.form fieldset div.field.switch-container .switch[data-state=isChecked]::before {
+    background: url(/Content/images/slider-on.png) no-repeat;
+    background-size: 18px 17px;
+    width: 18px;
+    height: 17px;
+    margin-top: -8px;
+    left: 25%;
+    margin-left: -9px;
+    right: auto;
+    margin-right: 0
+}
+
+div.form fieldset div.field.switch-container .switch[data-state=isChecked]::after {
+    border: none;
+    height: 34px;
+    float: right
+}
+
+div.form fieldset div.field.switch-container .switch[data-state=isChecked]~.checkbox-switch-identifier {
+    display: inline-block
+}
+
+div.form fieldset div.field.switch-container .switch.facebook::after {
+    background: #fff url(/Content/images/fb-dis-ico.png) no-repeat;
+    background-size: 30px;
+    background-position: 10px 5px
+}
+
+div.form fieldset div.field.switch-container .switch.facebook[data-state=isChecked] {
+    background: #2d609b
+}
+
+div.form fieldset div.field.switch-container .switch.facebook[data-state=isChecked]::after {
+    background-image: url(/Content/images/fb-colo-ico.png)
+}
+
+div.form fieldset div.field.switch-container .switch.google::after {
+    background: #fff url(/Content/images/gplus-dis-ico.png) no-repeat;
+    background-size: 25px;
+    background-position: center
+}
+
+div.form fieldset div.field.switch-container .switch.google[data-state=isChecked] {
+    background: #dc4e40
+}
+
+div.form fieldset div.field.switch-container .switch.google[data-state=isChecked]::after {
+    background-image: url(/Content/images/gplus-colo-ico.png)
+}
+
+div.form fieldset div.field.switch-container .switch.twitter::after {
+    background: #fff url(/Content/images/twitter-dis-ico.png) no-repeat;
+    background-size: 25px;
+    background-position: center
+}
+
+div.form fieldset div.field.switch-container .switch.twitter[data-state=isChecked] {
+    background: #00c3f3
+}
+
+div.form fieldset div.field.switch-container .switch.twitter[data-state=isChecked]::after {
+    background-image: url(/Content/images/twitter-colo-ico.png)
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error {
+    display: none;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    bottom: 70px
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content {
+    background: #fdf0ce;
+    color: #222;
+    padding: 17px 22px 17px 17px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-align: left;
+    border: #ede1c0 solid 1px;
+    position: relative
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content p {
+    font-size: 12px;
+    color: #222;
+    margin: 0;
+    padding: 0
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content p a {
+    text-decoration: underline;
+    color: #222
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content a.close-error {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    text-indent: -999px;
+    text-align: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(/Content/images/close-icon.png) no-repeat;
+    background-size: 10px
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #fdf0ce transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -14px;
+    left: 44%
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-error .switch-error-content:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #ede1c0 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    bottom: -15px;
+    left: 44%
+}
+
+div.form fieldset div.field.switch-container .checkbox-switch-identifier {
+    display: none;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-transform: uppercase
+}
+
+div.form fieldset div.submit {
+    margin: 15px 0 15px;
+    text-align: center
+}
+
+div.form fieldset div.submit input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    height: 36px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+    white-space: normal;
+    letter-spacing: 1px
+}
+
+div.form fieldset div.submit input:hover {
+    -moz-opacity: .65;
+    opacity: .65
+}
+
+div.form fieldset div.submit input[disabled] {
+    background-color: #aaa
+}
+
+div.form fieldset div.submit a {
+    float: right
+}
+
+div.form fieldset div.forgotten-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px
+}
+
+div.form fieldset div.form-field-spacer {
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin: 39px 0 20px 0;
+    clear: both
+}
+
+
+
+div.form fieldset div.select-list select {
+    background: 0 0;
+    padding: 7px 10px;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-indent: .01px;
+    text-overflow: ""
+}
+
+div.form fieldset div.select-list select::-ms-expand {
+    display: none
+}
+
+div.form.existing-signin {
+    margin-top: 20px
+}
+
+div.form.existing-signin form {
+    padding-top: 0
+}
+
+div.form.existing-signin form fieldset {
+    padding-bottom: 31px
+}
+
+div.form-login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px
+}
+
+div.form-login form {
+    padding-top: 0
+}
+
+div.form-login form fieldset div:first-child+div.field {
+    margin-top: 0
+}
+
+div.form-login>h4 {
+    margin-bottom: 15px
+}
+
+div.form-account-details {
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.form-account-details form {
+    padding-top: 20px
+}
+
+div.form-forgotten-password {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 20px
+}
+
+div.form-forgotten-password,
+div.social-register {
+    margin-left: auto;
+    margin-right: auto
+}
+
+div.form-forgotten-password form,
+div.social-register form {
+    padding-top: 0
+}
+
+div.form-forgotten-password form .form-field-spacer+.field:not(.before-spacer),
+div.social-register form .form-field-spacer+.field:not(.before-spacer) {
+    margin-bottom: 20px
+}
+
+div.form.social-register {
+    margin-top: 45px
+}
+
+div.form.social-register fieldset .form-field-spacer {
+    float: left
+}
+
+div.fb-widget {
+    width: 100%;
+    text-align: center
+}
+
+div.fb-widget .fb-facepile {
+    margin: 0 auto
+}
+
+div.no-addresses {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.register div.form {
+    max-height: 0;
+    overflow: hidden
+}
+
+.register div.form form {
+    border-top: 1px solid #eee;
+    position: relative;
+    padding-top: 50px
+}
+
+.register div.form form div.form-field-spacer {
+    margin-top: 35px
+}
+
+@-moz-document url-prefix() {
+    #content .form fieldset div.select-list {
+        background-image: none
+    }
+}
+
+div.g-recaptcha div {
+    margin: auto
+}
+
+.grecaptcha-badge {
+    z-index: 1
+}
+
+div.form fieldset div.field legend span.optional {
+    display: none;
+    color: #767676;
+    margin-left: 5px
+}
+
+div.form fieldset div.field legend {
+    font-family: futura-pt, Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #767676;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.7
+}
+
+div.form fieldset div.field legend:after {
+    content: ":";
+    width: auto;
+    color: #767676
+}
+
+.terms {
+    padding: 10px 2% 0 2%;
+    font-size: .897em;
+    color: #666;
+    text-align: center
+}
+
+.terms a {
+    color: #666
+}
+
+.terms label {
+    font-size: 12px;
+    line-height: 14px
+}
+
+.button-link {
+    padding: 20px 0 30px 0
+}
+
+.button-link a {
+    background-color: #2d2d2d;
+    color: #fff !important;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #3b3b3b;
+    background: -moz-linear-gradient(top, #676767 0, #3b3b3b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #676767), color-stop(100%, #3b3b3b));
+    background: -webkit-linear-gradient(top, #676767 0, #3b3b3b 100%);
+    background: -o-linear-gradient(top, #676767 0, #3b3b3b 100%);
+    background: -ms-linear-gradient(top, #676767 0, #3b3b3b 100%);
+    background: linear-gradient(to bottom, #676767 0, #3b3b3b 100%);
+    border: 0;
+    min-width: 30%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block
+}
+
+.button-link a.disabled {
+    background: #9e9e9e;
+    background: -moz-linear-gradient(top, #b1b1b1 0, #9e9e9e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b1b1b1), color-stop(100%, #9e9e9e));
+    background: -webkit-linear-gradient(top, #b1b1b1 0, #9e9e9e 100%);
+    background: -o-linear-gradient(top, #b1b1b1 0, #9e9e9e 100%);
+    background: -ms-linear-gradient(top, #b1b1b1 0, #9e9e9e 100%);
+    background: linear-gradient(to bottom, #b1b1b1 0, #9e9e9e 100%)
+}
+
+.breadcrumb {
+    margin: 5px auto;
+    padding: 0;
+    width: 90%
+}
+
+.breadcrumb a {
+    font-weight: 700;
+    text-decoration: none;
+    display: inline;
+    margin-right: 10px
+}
+
+
+
+.qa-use-email{
+      text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,71 @@
+
+
+
+
+html {
+    font-size: 0.625em;
+    /* e.g. 16px * 0.625 = 10px baseline font size for easy rem calculation */
+}
+
+body,
+button,
+input,
+input[type="button"],
+input[type="email"],
+input[type="file"],
+input[type="password"],
+input[type="reset"],
+input[type="search"],
+input[type="submit"],
+select,
+textarea {
+    color: #2d2d2d;
+    font-family: futura-pt, Futura, Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+    margin: 0;
+}
+
+
+
+
+
+body {
+    background-color: #eee;
+}
+
+
+
+
+._2h7tM8psdzN6GH5Inr9jYb {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.28rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    margin-bottom: calc(4 * 4px);
+    margin-top: calc(1 * 4px);
+}
+
+._5M2UV7oot4WAc-Qy1sSJ1 {
+    margin-top: calc(3 * 4px);
+}
+
+.FJVAQBSkmOkdSx5skW81w {
+    padding: calc(6 * 4px) calc(4 * 4px);
+}
+
+.FIRwEukkWoFvSoZN5ARsT {
+    position: relative;
+    text-align: center;
+}
+
+._1oWk0TEEM0vkE5-RaIq0UP {
+    line-height: 2.4rem;
+    margin-bottom: calc(6 * 4px);
+}
+
